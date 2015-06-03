@@ -1,0 +1,5 @@
+# Routes
+# ~~~~
+
+GET    /docs/:project/:tag          controllers.Application.index(project, tag)
+GET    /docs/:project/:tag/*path    controllers.Application.docs(project, tag, path)
